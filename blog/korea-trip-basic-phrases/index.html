@@ -13,4 +13,88 @@ h1{font-size:clamp(32px,5vw,52px);line-height:1.16;letter-spacing:-.04em;margin:
 .box{background:#fff;border:1px solid #eadfce;border-radius:24px;padding:26px;box-shadow:0 12px 32px rgba(31,41,55,.06)}.phrase-box{border:1px solid #eadfce;border-radius:18px;padding:14px;margin:18px 0}.phrase-row{display:grid;grid-template-columns:110px 1fr;gap:12px;border-bottom:1px solid #f0ebe3;padding:9px 0}.phrase-row:last-child{border-bottom:0}.label{font-weight:900;color:#7c4a03}
 .button{display:inline-block;background:#111827;color:#fff;border-radius:999px;padding:10px 16px;text-decoration:none;font-weight:800}.related{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.related a{background:#fff;border:1px solid #eadfce;border-radius:14px;padding:12px;text-decoration:none;color:#1f2937;font-weight:700}
 footer{border-top:1px solid #eadfce;text-align:center;color:#667085;font-size:13px;padding:28px 20px}@media(max-width:800px){.grid,.related{grid-template-columns:1fr}nav{display:none}.box{padding:20px}}
-</style></head><body><header><div class="header-inner"><a class="logo" href="/"><span>話</span>3カ国語 日常会話100</a><nav><a href="/">トップ</a><a href="/blog/">ブログ</a><a href="/operator/">運営者情報</a><a href="/korea-travel-korean-phrases/">韓国旅行</a><a href="/taiwan-travel-chinese-phrases/">台湾旅行</a><a href="/restaurant-phrases/">レストラン</a></nav></div></header><main class="article"><span class="eyebrow">韓国旅行 韓国語 フレーズ</span><h1>韓国旅行前にまず覚えたい韓国語フレーズ10選</h1><p class="lead">韓国旅行では、長い会話ができなくても、短い定番フレーズを知っているだけでかなり安心できます。</p><p class="meta">投稿日：2026-05-19｜カテゴリ：韓国語</p><div class="box"><h2>まず覚えたい基本表現</h2><p>最初に覚えるなら「こんにちは」「ありがとうございます」「すみません」の3つです。お店やホテル、駅など、どの場面でも使いやすい表現です。</p><h2>注文・買い物で使う表現</h2><p>買い物や飲食店では「이거 주세요（これをください）」「얼마예요?（いくらですか？）」が便利です。</p><h2>困ったときの表現</h2><p>道に迷ったり、言葉が分からなかったりしたときは「이해가 안 돼요」「천천히 말해 주세요」を使います。</p><h2>すぐ使えるフレーズ</h2><div class="phrase-box"><div class="phrase-row"><div class="label">こんにちは</div><div><strong>안녕하세요.</strong><br><span class="meta">アンニョンハセヨ</span></div></div><div class="phrase-row"><div class="label">ありがとうございます</div><div><strong>감사합니다.</strong><br><span class="meta">カムサハムニダ</span></div></div><div class="phrase-row"><div class="label">これはいくらですか？</div><div><strong>이거 얼마예요?</strong><br><span class="meta">イゴ オルマエヨ</span></div></div><div class="phrase-row"><div class="label">これをください</div><div><strong>이거 주세요.</strong><br><span class="meta">イゴ ジュセヨ</span></div></div></div><p>もっとまとめて練習したい場合は、用途別フレーズページも活用してください。</p><a class="button" href="/korea-travel-korean-phrases/">音声つきフレーズ一覧を見る</a><h2>関連記事</h2><div class="related"><a href="/blog/taiwan-trip-chinese-shopping/">台湾旅行の買い物で使える中国語フレーズ10選</a><a href="/blog/restaurant-trilingual-phrases/">レストランで使う英語・中国語・韓国語フレーズまとめ</a></div></div></main><footer>© 3カ国語 日常会話100｜<a href="/operator/">運営者情報</a></footer></body></html>
+
+/* Unified floating global menu */
+.site-header,
+header{
+  position:sticky !important;
+  top:14px !important;
+  z-index:50 !important;
+  width:calc(100% - 28px) !important;
+  max-width:1040px !important;
+  margin:14px auto 0 !important;
+  border:1px solid rgba(234,223,206,.95) !important;
+  border-radius:999px !important;
+  background:rgba(255,255,255,.86) !important;
+  backdrop-filter:blur(16px) !important;
+  box-shadow:0 12px 34px rgba(31,41,55,.10) !important;
+}
+.header-inner{
+  max-width:100% !important;
+  min-height:58px !important;
+  padding:10px 18px !important;
+}
+.nav{
+  display:flex !important;
+  gap:10px !important;
+  align-items:center !important;
+  flex-wrap:wrap !important;
+}
+.nav a,
+nav a{
+  display:inline-flex !important;
+  align-items:center !important;
+  min-height:34px !important;
+  padding:6px 12px !important;
+  border-radius:999px !important;
+  text-decoration:none !important;
+  color:#667085 !important;
+  font-size:14px !important;
+  font-weight:700 !important;
+}
+.nav a:hover,
+nav a:hover{
+  background:#fff8e8 !important;
+  color:#1f2937 !important;
+}
+main{
+  padding-top:56px !important;
+}
+@media(max-width:720px){
+  .site-header,
+  header{
+    top:8px !important;
+    width:calc(100% - 16px) !important;
+    margin-top:8px !important;
+    border-radius:24px !important;
+  }
+  .header-inner{
+    align-items:flex-start !important;
+    flex-direction:column !important;
+    gap:8px !important;
+  }
+  .nav,
+  nav{
+    display:flex !important;
+    width:100% !important;
+    gap:6px !important;
+  }
+  .nav a,
+  nav a{
+    font-size:13px !important;
+    padding:5px 10px !important;
+  }
+}
+
+</style></head><body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/"><span class="logo-mark">話</span><span>3カ国語 日常会話100</span></a>
+    <nav class="nav">
+      <a href="/">トップ</a>
+      <a href="/blog/">ブログ</a>
+      <a href="/operator/">運営者情報</a>
+    </nav>
+  </div>
+</header>
+<main class="article"><span class="eyebrow">韓国旅行 韓国語 フレーズ</span><h1>韓国旅行前にまず覚えたい韓国語フレーズ10選</h1><p class="lead">韓国旅行では、長い会話ができなくても、短い定番フレーズを知っているだけでかなり安心できます。</p><p class="meta">投稿日：2026-05-19｜カテゴリ：韓国語</p><div class="box"><h2>まず覚えたい基本表現</h2><p>最初に覚えるなら「こんにちは」「ありがとうございます」「すみません」の3つです。お店やホテル、駅など、どの場面でも使いやすい表現です。</p><h2>注文・買い物で使う表現</h2><p>買い物や飲食店では「이거 주세요（これをください）」「얼마예요?（いくらですか？）」が便利です。</p><h2>困ったときの表現</h2><p>道に迷ったり、言葉が分からなかったりしたときは「이해가 안 돼요」「천천히 말해 주세요」を使います。</p><h2>すぐ使えるフレーズ</h2><div class="phrase-box"><div class="phrase-row"><div class="label">こんにちは</div><div><strong>안녕하세요.</strong><br><span class="meta">アンニョンハセヨ</span></div></div><div class="phrase-row"><div class="label">ありがとうございます</div><div><strong>감사합니다.</strong><br><span class="meta">カムサハムニダ</span></div></div><div class="phrase-row"><div class="label">これはいくらですか？</div><div><strong>이거 얼마예요?</strong><br><span class="meta">イゴ オルマエヨ</span></div></div><div class="phrase-row"><div class="label">これをください</div><div><strong>이거 주세요.</strong><br><span class="meta">イゴ ジュセヨ</span></div></div></div><p>もっとまとめて練習したい場合は、用途別フレーズページも活用してください。</p><a class="button" href="/korea-travel-korean-phrases/">音声つきフレーズ一覧を見る</a><h2>関連記事</h2><div class="related"><a href="/blog/taiwan-trip-chinese-shopping/">台湾旅行の買い物で使える中国語フレーズ10選</a><a href="/blog/restaurant-trilingual-phrases/">レストランで使う英語・中国語・韓国語フレーズまとめ</a></div></div></main><footer>© 3カ国語 日常会話100｜<a href="/operator/">運営者情報</a></footer></body></html>

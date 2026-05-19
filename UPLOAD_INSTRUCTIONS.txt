@@ -1,11 +1,19 @@
-# 運営者情報ページ デザイン変更版
+# グローバルメニュー統一・フローティング化版
 
-画像の参考デザインに近い、プロフィールカード型の運営者情報ページに変更しています。
+## 変更内容
+- ブログページのグローバルメニューから「韓国旅行」「台湾旅行」「レストラン」を削除
+- 全ページのグローバルメニューを以下に統一
+  - トップ
+  - ブログ
+  - 運営者情報
+- グローバルメニューをフローティング型に変更
 
-## 反映方法
+## アップロード方法
 ZIPを解凍し、中身をGitHubのトップ階層にアップロードしてください。
-index.html などは上書きでOKです。
+index.html、blog配下、operator配下などは上書きでOKです。
 google〜.html のSearch Console確認ファイルは消さないでください。
 
 ## 確認URL
+https://trilingual-phrase.vercel.app/
+https://trilingual-phrase.vercel.app/blog/
 https://trilingual-phrase.vercel.app/operator/
