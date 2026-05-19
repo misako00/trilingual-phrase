@@ -1,0 +1,1 @@
+ZIPを解凍し、中身をGitHubリポジトリにアップロードしてください。Search Consoleには sitemap.xml を送信してください。
