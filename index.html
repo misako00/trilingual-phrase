@@ -73,7 +73,111 @@ main{
   }
 }
 
+
+.hero-visual{
+  position:relative;
+  width:100%;
+  border-radius:28px;
+  overflow:hidden;
+  background:#eaf3ff;
+  border:1px solid var(--line, #eadfce);
+  box-shadow:0 24px 60px rgba(31,41,55,.12);
+}
+.hero-visual img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+.hero-visual::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.08));
+  pointer-events:none;
+}
+@media(max-width:900px){
+  .hero-visual{
+    border-radius:22px;
+  }
+}
+
+
+/* Floating global menu */
+.site-header,
+header{
+  position:sticky !important;
+  top:14px !important;
+  z-index:50 !important;
+  width:calc(100% - 28px) !important;
+  max-width:1040px !important;
+  margin:14px auto 0 !important;
+  border:1px solid rgba(234,223,206,.95) !important;
+  border-radius:999px !important;
+  background:rgba(255,255,255,.86) !important;
+  backdrop-filter:blur(16px) !important;
+  box-shadow:0 12px 34px rgba(31,41,55,.10) !important;
+}
+.header-inner{
+  max-width:100% !important;
+  min-height:58px !important;
+  padding:10px 18px !important;
+}
+.nav{
+  display:flex !important;
+  gap:10px !important;
+  align-items:center !important;
+  flex-wrap:wrap !important;
+}
+.nav a,
+nav a{
+  display:inline-flex !important;
+  align-items:center !important;
+  min-height:34px !important;
+  padding:6px 12px !important;
+  border-radius:999px !important;
+  text-decoration:none !important;
+  color:#667085 !important;
+  font-size:14px !important;
+  font-weight:700 !important;
+}
+.nav a:hover,
+nav a:hover{
+  background:#fff8e8 !important;
+  color:#1f2937 !important;
+}
+main{
+  padding-top:56px !important;
+}
+@media(max-width:720px){
+  .site-header,
+  header{
+    top:8px !important;
+    width:calc(100% - 16px) !important;
+    margin-top:8px !important;
+    border-radius:24px !important;
+  }
+  .header-inner{
+    align-items:flex-start !important;
+    flex-direction:column !important;
+    gap:8px !important;
+  }
+  .nav,
+  nav{
+    display:flex !important;
+    width:100% !important;
+    gap:6px !important;
+  }
+  .nav a,
+  nav a{
+    font-size:13px !important;
+    padding:5px 10px !important;
+  }
+}
+
 </style></head><body>
+
 <header class="site-header">
   <div class="header-inner">
     <a class="logo" href="/"><span class="logo-mark">話</span><span>3カ国語 日常会話100</span></a>
@@ -84,7 +188,11 @@ main{
     </nav>
   </div>
 </header>
-<main><section class="hero"><div><span class="eyebrow">英語 中国語 韓国語 日常会話</span><h1>英語・中国語・韓国語を、用途別に音声つきで練習。</h1><p class="lead">旅行前や接客練習に使える英語・中国語・韓国語フレーズを、用途別にまとめました。日本語の意味、音声再生、ピンイン、韓国語の読み方を確認しながら練習できます。</p><a class="button" href="#phrases">音声つきで練習する</a></div><div class="card"><h2>用途別ページ</h2><p class="section-lead">必要な場面から練習できます。</p><div class="toc"><a href="/korea-travel-korean-phrases/">韓国旅行で使える韓国語フレーズ</a><a href="/taiwan-travel-chinese-phrases/">台湾旅行で使える中国語フレーズ</a><a href="/airport-phrases/">空港で使う英語・中国語・韓国語フレーズ</a><a href="/hotel-phrases/">ホテルで使う英語・中国語・韓国語フレーズ</a><a href="/restaurant-phrases/">レストランで使う英語・中国語・韓国語フレーズ</a><a href="/shopping-phrases/">買い物で使う英語・中国語・韓国語フレーズ</a><a href="/directions-transport-phrases/">道案内・移動で使う英語・中国語・韓国語フレーズ</a><a href="/emergency-medical-phrases/">緊急時・病院で使う英語・中国語・韓国語フレーズ</a><a href="/customer-service-phrases/">接客で使う英語・中国語・韓国語フレーズ</a><a href="/greetings-phrases/">英語・中国語・韓国語のあいさつ・自己紹介フレーズ</a></div></div></section><section class="section"><h2>学習のコツ</h2><p class="section-lead">まずは短い表現を音声で聞き、1文ずつ声に出して練習しましょう。</p><div class="tips"><div class="tip">再生速度を「ゆっくり」にすると、初めての表現も聞き取りやすくなります。</div><div class="tip">旅行前は、必要な場面のページだけを繰り返すと効率的です。</div><div class="tip">正確な発音に不安がある場合は、音声を聞いて全体のリズムをまねしましょう。</div></div></section><section class="section" id="phrases"><h2>英語・中国語・韓国語を、用途別に音声つきで練習。</h2><p class="section-lead">日本語の意味を見ながら、英語・中国語・韓国語の表現と音声を確認できます。</p><div class="controls"><label>再生速度<select id="rate"><option value="0.65">ゆっくり</option><option value="0.9" selected>ふつう</option><option value="1.1">少し速い</option></select></label><label>フレーズ検索<input id="search" placeholder="例：トイレ / thank / 谢谢 / 안녕" oninput="filterRows()"></label></div><div class="table-wrap"><table id="phraseTable"><thead><tr><th>No.</th><th>日本語</th><th>英語</th><th>中国語</th><th>韓国語</th></tr></thead><tbody><tr><td class="num">1</td><td class="jp">こんにちは。</td><td><div class="phrase">Hello.</div><div class="pron">English</div><button onclick="speak(&#x27;Hello.&#x27;,'en-US')">英語 ▶</button></td><td><div class="phrase">你好。</div><div class="pron">Nǐ hǎo</div><button onclick="speak(&#x27;你好。&#x27;,'zh-CN')">中国語 ▶</button></td><td><div class="phrase">안녕하세요.</div><div class="pron">アンニョンハセヨ</div><button onclick="speak(&#x27;안녕하세요.&#x27;,'ko-KR')">韓国語 ▶</button></td></tr>
+
+<main><section class="hero"><div><span class="eyebrow">英語 中国語 韓国語 日常会話</span><h1>英語・中国語・韓国語を、用途別に音声つきで練習。</h1><p class="lead">旅行前や接客練習に使える英語・中国語・韓国語フレーズを、用途別にまとめました。日本語の意味、音声再生、ピンイン、韓国語の読み方を確認しながら練習できます。</p><a class="button" href="#phrases">音声つきで練習する</a></div><div class="hero-visual">
+    <img src="/assets/hero-keyvisual.png" alt="海外旅行で英語・中国語・韓国語を使って会話する人たちのイラスト">
+  </div>
+</section><section class="section"><h2>学習のコツ</h2><p class="section-lead">まずは短い表現を音声で聞き、1文ずつ声に出して練習しましょう。</p><div class="tips"><div class="tip">再生速度を「ゆっくり」にすると、初めての表現も聞き取りやすくなります。</div><div class="tip">旅行前は、必要な場面のページだけを繰り返すと効率的です。</div><div class="tip">正確な発音に不安がある場合は、音声を聞いて全体のリズムをまねしましょう。</div></div></section><section class="section" id="phrases"><h2>英語・中国語・韓国語を、用途別に音声つきで練習。</h2><p class="section-lead">日本語の意味を見ながら、英語・中国語・韓国語の表現と音声を確認できます。</p><div class="controls"><label>再生速度<select id="rate"><option value="0.65">ゆっくり</option><option value="0.9" selected>ふつう</option><option value="1.1">少し速い</option></select></label><label>フレーズ検索<input id="search" placeholder="例：トイレ / thank / 谢谢 / 안녕" oninput="filterRows()"></label></div><div class="table-wrap"><table id="phraseTable"><thead><tr><th>No.</th><th>日本語</th><th>英語</th><th>中国語</th><th>韓国語</th></tr></thead><tbody><tr><td class="num">1</td><td class="jp">こんにちは。</td><td><div class="phrase">Hello.</div><div class="pron">English</div><button onclick="speak(&#x27;Hello.&#x27;,'en-US')">英語 ▶</button></td><td><div class="phrase">你好。</div><div class="pron">Nǐ hǎo</div><button onclick="speak(&#x27;你好。&#x27;,'zh-CN')">中国語 ▶</button></td><td><div class="phrase">안녕하세요.</div><div class="pron">アンニョンハセヨ</div><button onclick="speak(&#x27;안녕하세요.&#x27;,'ko-KR')">韓国語 ▶</button></td></tr>
 <tr><td class="num">2</td><td class="jp">ありがとうございます。</td><td><div class="phrase">Thank you.</div><div class="pron">English</div><button onclick="speak(&#x27;Thank you.&#x27;,'en-US')">英語 ▶</button></td><td><div class="phrase">谢谢。</div><div class="pron">Xièxie</div><button onclick="speak(&#x27;谢谢。&#x27;,'zh-CN')">中国語 ▶</button></td><td><div class="phrase">감사합니다.</div><div class="pron">カムサハムニダ</div><button onclick="speak(&#x27;감사합니다.&#x27;,'ko-KR')">韓国語 ▶</button></td></tr>
 <tr><td class="num">3</td><td class="jp">すみません。</td><td><div class="phrase">Excuse me.</div><div class="pron">English</div><button onclick="speak(&#x27;Excuse me.&#x27;,'en-US')">英語 ▶</button></td><td><div class="phrase">不好意思。</div><div class="pron">Bù hǎoyìsi</div><button onclick="speak(&#x27;不好意思。&#x27;,'zh-CN')">中国語 ▶</button></td><td><div class="phrase">실례합니다.</div><div class="pron">シルレハムニダ</div><button onclick="speak(&#x27;실례합니다.&#x27;,'ko-KR')">韓国語 ▶</button></td></tr>
 <tr><td class="num">4</td><td class="jp">ごめんなさい。</td><td><div class="phrase">I&#x27;m sorry.</div><div class="pron">English</div><button onclick="speak(&quot;I&#x27;m sorry.&quot;,'en-US')">英語 ▶</button></td><td><div class="phrase">对不起。</div><div class="pron">Duìbuqǐ</div><button onclick="speak(&#x27;对不起。&#x27;,'zh-CN')">中国語 ▶</button></td><td><div class="phrase">죄송합니다.</div><div class="pron">チェソンハムニダ</div><button onclick="speak(&#x27;죄송합니다.&#x27;,'ko-KR')">韓国語 ▶</button></td></tr>

@@ -1,19 +1,15 @@
-# グローバルメニュー統一・フローティング化版
+# トップページ キービジュアル組み込み版
 
 ## 変更内容
-- ブログページのグローバルメニューから「韓国旅行」「台湾旅行」「レストラン」を削除
-- 全ページのグローバルメニューを以下に統一
-  - トップ
-  - ブログ
-  - 運営者情報
-- グローバルメニューをフローティング型に変更
+- トップページにキービジュアルを追加
+- 画像ファイルを /assets/hero-keyvisual.png として追加
+- 既存のブログ、運営者情報、用途別ページ構成は維持
+- グローバルメニューは「トップ / ブログ / 運営者情報」で統一
 
 ## アップロード方法
 ZIPを解凍し、中身をGitHubのトップ階層にアップロードしてください。
-index.html、blog配下、operator配下などは上書きでOKです。
+index.html、assetsフォルダなどは上書きでOKです。
 google〜.html のSearch Console確認ファイルは消さないでください。
 
 ## 確認URL
 https://trilingual-phrase.vercel.app/
-https://trilingual-phrase.vercel.app/blog/
-https://trilingual-phrase.vercel.app/operator/
