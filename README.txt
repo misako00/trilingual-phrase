@@ -1,1 +1,1 @@
-ZIPを解凍し、中身をGitHubリポジトリにアップロードしてください。Search Consoleには sitemap.xml を送信してください。
+blogフォルダとsitemap-blog.xmlをGitHubのトップにアップロードしてください。Vercel反映後、/blog/ を確認してください。Search Consoleには sitemap-blog.xml も送信してください。
