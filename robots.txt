@@ -3,3 +3,5 @@ Allow: /
 Sitemap: https://trilingual-phrase.vercel.app/sitemap.xml
 
 Sitemap: https://trilingual-phrase.vercel.app/sitemap-blog.xml
+
+Sitemap: https://trilingual-phrase.vercel.app/sitemap-operator.xml

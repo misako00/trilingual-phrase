@@ -1,16 +1,11 @@
-# アップロード方法
+# 運営者情報ページ デザイン変更版
 
-このZIPを解凍して、中身をGitHubのトップ階層にアップロードしてください。
+画像の参考デザインに近い、プロフィールカード型の運営者情報ページに変更しています。
 
-重要：
-- ZIPフォルダごとではなく、中身だけをアップロードします。
-- index.html は上書きしてください。
-- blog フォルダ、sitemap-blog.xml もトップ階層に置いてください。
+## 反映方法
+ZIPを解凍し、中身をGitHubのトップ階層にアップロードしてください。
+index.html などは上書きでOKです。
+google〜.html のSearch Console確認ファイルは消さないでください。
 
-アップロード後に確認するURL：
-https://trilingual-phrase.vercel.app/
-https://trilingual-phrase.vercel.app/blog/
-
-Search Consoleでは、必要に応じて以下も送信してください。
-sitemap.xml
-sitemap-blog.xml
+## 確認URL
+https://trilingual-phrase.vercel.app/operator/
